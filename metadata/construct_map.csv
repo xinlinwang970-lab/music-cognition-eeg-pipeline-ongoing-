@@ -1,0 +1,5 @@
+dataset,target_name,construct_family,target_granularity,role
+NMED-E,engagement,engagement,continuous,discovery
+DS002721,energy,affective_activation,trial,primary
+DS002721,tension,affective_tension,trial,secondary
+DS002721,pleasantness,affective_valence,trial,construct_contrast

@@ -1,0 +1,58 @@
+# Local data and restricted raw EEG files
+data/*
+!data/README.md
+*.edf
+*.bdf
+*.set
+*.fdt
+*.vhdr
+*.vmrk
+*.eeg
+*.mat
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Large or regenerated analysis outputs
+full_v1_outputs/
+v1_1_outputs/
+toy1_outputs/
+toy1_1_outputs/
+toy2_outputs/
+outputs/
+derived/
+*.parquet
+scripts/adapters/
+
+# Curated public outputs are kept separately
+!results/
+!results/**
+
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+pytest-cache-files-*/
+pytest-cache-files-*
+.coverage
+htmlcov/
+
+# Local environments and notebooks
+.venv/
+venv/
+env/
+.env
+.env.*
+.ipynb_checkpoints/
+*.ipynb
+
+# Local IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local/private working reports
+EEG_AI_Music_current_experiment_report_2026-08-24.md
+reports/

@@ -1,0 +1,38 @@
+dataset: OpenNeuro DS002721
+snapshot_tag: 1.0.3
+role: cross_dataset_transportability
+data_location: data/ds002721/
+redistribute_raw_data: false
+primary_feature:
+  band_hz: [15.0, 30.0]
+  representation: log10_absolute_band_power
+  method: welch
+  welch_segment_sec: 2.0
+  welch_window: hann
+  welch_detrend: constant
+primary_channel: Fz
+frontal_roi:
+  - FP1
+  - FP2
+  - F7
+  - F3
+  - Fz
+  - F4
+  - F8
+music_runs: [2, 3, 4, 5]
+targets:
+  primary:
+    name: Energy
+    construct: affective_activation
+  secondary:
+    - name: Tension
+      construct: affective_tension
+    - name: Pleasantness
+      construct: affective_valence
+aggregation:
+  unit: trial
+  note: One beta value is computed per music trial to match trial-level ratings.
+boundaries:
+  - DS002721 is not a continuous engagement replication of NMED-E.
+  - Energy, Tension, and Pleasantness are not treated as engagement synonyms.
+  - Raw EDF files are downloaded or cached locally only and are not redistributed.

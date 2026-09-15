@@ -1,0 +1,30 @@
+dataset: NMED-E
+role: discovery_baseline
+data_location: data/
+redistribute_raw_data: false
+required_local_files:
+  - CleanEEG_stim22.mat
+  - CleanEEG_stim23.mat
+  - CleanCB_All.mat
+  - CleanRatings_All.mat
+  - GSN-HydroCel-129.sfp
+primary_feature:
+  band_hz: [15.0, 30.0]
+  representation: log10_absolute_band_power
+  method: welch
+  welch_segment_sec: 2.0
+  welch_window: hann
+  welch_detrend: constant
+primary_channel:
+  sensor: E11
+  approximate_standard_location: Fz
+windowing:
+  window_sec: 5.0
+  overlap: 0.0
+contrast:
+  subject_level: Spearman(beta_window, engagement_window)
+  group_level: original_minus_control_delta_rho
+boundaries:
+  - Not a causal test.
+  - Not a flow biomarker claim.
+  - Audio stimulus files are not present locally, so acoustic control is incomplete.

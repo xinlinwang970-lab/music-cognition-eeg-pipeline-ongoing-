@@ -1,0 +1,34 @@
+{
+  "dataset": "DS002721",
+  "snapshot_tag": "1.0.3",
+  "n_subjects": 31,
+  "n_trials": 1240,
+  "primary_channel": "Fz",
+  "frontal_roi": [
+    "FP1",
+    "FP2",
+    "F7",
+    "F3",
+    "Fz",
+    "F4",
+    "F8"
+  ],
+  "validation": {
+    "beta_20hz_log_power": -0.301029995663981,
+    "beta_11hz_log_power": -28.698055946168473,
+    "passed": true
+  },
+  "energy_primary_mean": -0.0182951815266571,
+  "tension_primary_mean": -0.045584860917639,
+  "pleasantness_primary_mean": -0.0026772880645794,
+  "energy_roi_mean": -0.013097977329222,
+  "loso_group_energy_primary_mean": 0.0270866426942017,
+  "software": {
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "mne": "1.12.1",
+    "pandas": "3.0.1",
+    "numpy": "2.4.3"
+  },
+  "interpretation_boundary": "Transportability analysis only; no flow, causal, biomarker, BCI, or real-time decoding claim."
+}

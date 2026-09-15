@@ -1,0 +1,13 @@
+frontal_beta_v1:
+  band_hz: [15.0, 30.0]
+  representation: log10_absolute_band_power
+  method: welch
+  welch_window: hann
+  welch_detrend: constant
+  spatial_primary: frontal_midline
+  spatial_robustness: predefined_frontal_roi
+  transported_element: frontal_beta_15_30_hz
+  notes:
+    - Neural feature is transported across datasets.
+    - Temporal aggregation follows rating granularity.
+    - Do not tune band, channel, window length, model, or rating set on outcomes.
