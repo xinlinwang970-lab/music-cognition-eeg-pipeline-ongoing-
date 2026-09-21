@@ -49,3 +49,5 @@ DS002721 does not support strong cross-dataset transport to trial-level affect r
 ```
 
 This boundary is important. The result is useful because it narrows the next research question toward expertise, task context, stimulus structure, and construct validity rather than overclaiming a universal EEG marker.
+
+The dataset contrast is relevant for future work on participant background and task context: NMED-E is a musically trained naturalistic-listening sample, whereas DS002721 is a healthy-adult affective-listening dataset without public musical expertise labels. This contrast should be treated as an unresolved interpretive boundary, not as evidence that expertise alone explains the cross-dataset difference.

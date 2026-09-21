@@ -32,4 +32,6 @@ The strongest current statement is narrower: a prespecified frontal beta feature
 
 The DS002721 negative/null result is central. It means the current evidence is better framed as task- and construct-dependent than as a universal frontal beta response to music.
 
+The two datasets also differ in participant background, task context, and the availability of musical expertise metadata. NMED-E can be interpreted as a musically trained naturalistic-listening sample, whereas DS002721 is a healthy-adult affective-listening sample without a public expertise label. The present pipeline therefore cannot test expertise as a moderator. It can only motivate that question by showing that a feature discovered in one music-listening context does not automatically transport to another context with different stimuli and behavioral targets.
+
 The next scientifically useful step is not to tune DS002721 until it becomes positive. A stronger next step would be to acquire or reconstruct valid acoustic controls for NMED-E and test whether the NMED-E fast60 beta-engagement relationship remains after controlling for stimulus structure.

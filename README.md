@@ -1,18 +1,22 @@
 # Music Cognition EEG Pipeline V2.0
 
-This repository contains a reproducible research pipeline for testing whether a frozen frontal beta EEG feature shows consistent relationships with music engagement and affective ratings across open music EEG datasets.
+This repository contains a reproducible research pipeline for testing whether a prespecified frontal beta EEG feature shows consistent relationships with music engagement and affective ratings across open music EEG datasets.
 
-The repository is organized for methodological review. It preserves the current analysis scripts and documents the scientific boundary of the project: NMED-E is used as the discovery baseline for a frontal beta-engagement pattern, while DS002721 is used as a cross-dataset transportability test. The present evidence supports a paradigm-dependent candidate relationship, not a universal EEG marker for music emotion, flow, or BCI.
+The repository is organized for methodological review. It preserves the current analysis scripts and documents the scientific boundary of the project: NMED-E is used as the discovery baseline for a frontal beta-engagement pattern, while DS002721 is used as a cross-dataset transportability test. The comparison evaluates construct specificity, dataset transportability, and methodological boundaries rather than presenting a universal EEG marker for music emotion, flow, or BCI.
+
+NMED-E is a musically trained naturalistic-listening sample, whereas DS002721 is a healthy-adult affective-listening dataset without public musical expertise labels. This participant and task contrast is treated as an interpretive boundary and a candidate moderator for future work, not as evidence that musical expertise explains the cross-dataset difference.
 
 ## Research Question
 
 Can a prespecified frontal beta feature, defined as 15-30 Hz log power over frontal/anterior sensors, show reproducible engagement-related structure in NMED-E and transport to independent trial-level affective ratings in DS002721?
 
+The repository does not treat engagement, affect, expertise, and musical experience as interchangeable constructs. Instead, it uses the current open-data analyses to clarify where a candidate EEG relationship appears, where it does not transport, and which factors remain unresolved.
+
 ## Current Result
 
 In NMED-E, the strongest current result is the fast60 frontal beta contrast: beta-engagement coupling is more positive for the original stimulus than for the control stimulus in most included participants. This pattern is supported by the frontal ROI and leave-one-subject-out group engagement checks.
 
-In DS002721, the same transported frontal beta feature does not show a stable positive relationship with Energy, Tension, or Pleasantness. Energy is the primary transportability target and remains close to zero. This negative/null cross-dataset result is part of the main conclusion.
+In DS002721, the same transported frontal beta feature does not show a stable positive relationship with Energy, Tension, or Pleasantness. Energy is the primary transportability target and remains close to zero. This negative/null cross-dataset result is part of the main conclusion and highlights the need for designs that measure participant background, musical expertise, stimulus structure, and behavioral construct explicitly.
 
 ## Repository Map
 
@@ -29,7 +33,8 @@ In DS002721, the same transported frontal beta feature does not show a stable po
 │   ├── METHODS.md
 │   ├── DATASETS.md
 │   ├── LIMITATIONS.md
-│   └── RESULTS_SUMMARY.md
+│   ├── RESULTS_SUMMARY.md
+│   └── RESEARCH_EXTENSIONS.md
 ├── metadata/
 │   ├── construct_map.csv
 │   └── feature_specs.yaml
@@ -109,11 +114,14 @@ python run_v1_1_mechanism_robustness.py
 
 This repository does not claim a flow biomarker, clinical marker, causal mechanism, universal music-emotion feature, or real-time BCI-ready decoder. The present result is narrower: frontal beta in NMED-E is a candidate engagement-related feature whose transportability to DS002721 affect ratings is weak or absent.
 
-## Before Public Release
+See [docs/RESEARCH_EXTENSIONS.md](docs/RESEARCH_EXTENSIONS.md) for neutral research extensions suggested by the current dataset and construct boundaries.
 
-Before pushing this repository to GitHub, confirm:
+## Repository Hygiene Checklist
 
-- GitHub account and target repository name.
-- Final license choice.
-- Whether any generated CSVs or figures should be withheld.
-- Whether the repository should be public immediately or shared privately with Prof. Joydeep Bhattacharya first.
+Before publishing or updating the repository, confirm:
+
+- The selected license is appropriate for the analysis code and documentation.
+- Dataset-specific citation and access requirements are documented.
+- Raw EEG, downloaded archives, restricted data, local caches, and private working exports are not staged.
+- Curated CSV summaries and figures are small enough for GitHub and do not redistribute restricted source data.
+- Public documentation states the construct and dataset boundaries of the current result.

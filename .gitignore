@@ -22,6 +22,9 @@ toy1_1_outputs/
 toy2_outputs/
 outputs/
 derived/
+output/
+listening_exports/
+release_candidates/
 *.parquet
 scripts/adapters/
 
