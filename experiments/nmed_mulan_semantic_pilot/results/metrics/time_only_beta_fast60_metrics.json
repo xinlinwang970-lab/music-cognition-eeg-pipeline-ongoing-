@@ -1,0 +1,14 @@
+{
+  "target": "beta_fast60",
+  "feature_kind": "time_only",
+  "feature_csv": "outputs\\features\\original_time_features.csv",
+  "n_rows_after_alignment": 84,
+  "n_features": 4,
+  "pca_components": 0,
+  "n_predicted": 70,
+  "r2": -0.008267334758208511,
+  "pearson_r": -0.010720033151009018,
+  "pearson_p": 0.9298148398216292,
+  "spearman_rho": -0.08599422622692678,
+  "spearman_p": 0.47904622501551525
+}

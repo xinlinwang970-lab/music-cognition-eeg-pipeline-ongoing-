@@ -22,6 +22,10 @@ def test_public_documentation_and_curated_results_exist():
         "results/summary/cross_dataset_v2_0_summary.csv",
         "results/figures/nmede_fast60_timescale_delta.png",
         "results/figures/ds002721_construct_comparison.png",
+        "experiments/nmed_mulan_semantic_pilot/README.md",
+        "experiments/nmed_mulan_semantic_pilot/docs/RESULTS_SUMMARY.md",
+        "experiments/nmed_mulan_semantic_pilot/results/metrics/model_comparison_summary.csv",
+        "experiments/nmed_mulan_semantic_pilot/scripts/04_make_time_features.py",
     ]
     missing = [path for path in required if not (ROOT / path).exists()]
     assert missing == []
@@ -51,6 +55,9 @@ def test_public_docs_do_not_embed_local_absolute_paths():
         ROOT / "README.md",
         *sorted((ROOT / "docs").glob("*.md")),
         *sorted((ROOT / "configs").glob("*.yaml")),
+        *sorted((ROOT / "experiments" / "nmed_mulan_semantic_pilot").glob("*.md")),
+        *sorted((ROOT / "experiments" / "nmed_mulan_semantic_pilot" / "docs").glob("*.md")),
+        *sorted((ROOT / "experiments" / "nmed_mulan_semantic_pilot" / "configs").glob("*.yaml")),
         ROOT / "data" / "README.md",
     ]
     forbidden = [
@@ -66,6 +73,23 @@ def test_public_docs_do_not_embed_local_absolute_paths():
         for needle in forbidden:
             if needle in text:
                 hits.append(f"{path.relative_to(ROOT)} contains {needle}")
+    assert hits == []
+
+
+def test_mulan_experiment_excludes_restricted_or_large_local_artifacts():
+    experiment_root = ROOT / "experiments" / "nmed_mulan_semantic_pilot"
+    forbidden_patterns = [
+        "data/stimuli/*.wav",
+        "data/stimuli/*.mp3",
+        "data/stimuli/*.flac",
+        "data/external/*.csv",
+        "outputs/features/*.csv",
+        "vendor/**",
+        "models/**",
+    ]
+    hits = []
+    for pattern in forbidden_patterns:
+        hits.extend(str(path.relative_to(ROOT)) for path in experiment_root.glob(pattern))
     assert hits == []
 
 
@@ -89,6 +113,8 @@ def test_public_docs_do_not_contain_application_or_advisor_framing():
     public_text_files = [
         ROOT / "README.md",
         *sorted((ROOT / "docs").glob("*.md")),
+        *sorted((ROOT / "experiments" / "nmed_mulan_semantic_pilot").glob("*.md")),
+        *sorted((ROOT / "experiments" / "nmed_mulan_semantic_pilot" / "docs").glob("*.md")),
     ]
     forbidden = [
         "ullén",

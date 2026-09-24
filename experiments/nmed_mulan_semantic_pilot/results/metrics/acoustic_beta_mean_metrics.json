@@ -1,0 +1,14 @@
+{
+  "target": "beta_mean",
+  "feature_kind": "acoustic",
+  "feature_csv": "outputs\\features\\original_acoustic_features.csv",
+  "n_rows_after_alignment": 95,
+  "n_features": 30,
+  "pca_components": 0,
+  "n_predicted": 75,
+  "r2": -8.074575186616649,
+  "pearson_r": 0.570047360425783,
+  "pearson_p": 9.380755823904057e-08,
+  "spearman_rho": 0.7621906116642959,
+  "spearman_p": 1.9766621071354813e-15
+}

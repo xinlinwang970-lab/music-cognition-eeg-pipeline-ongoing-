@@ -1,0 +1,14 @@
+{
+  "target": "engagement_slow60",
+  "feature_kind": "time_only",
+  "feature_csv": "outputs\\features\\original_time_features.csv",
+  "n_rows_after_alignment": 84,
+  "n_features": 4,
+  "pca_components": 0,
+  "n_predicted": 70,
+  "r2": -16.239584769218173,
+  "pearson_r": -0.3258576329044088,
+  "pearson_p": 0.005908798771913425,
+  "spearman_rho": -0.34021520426909285,
+  "spearman_p": 0.003955513353134733
+}

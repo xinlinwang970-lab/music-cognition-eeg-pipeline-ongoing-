@@ -1,0 +1,14 @@
+{
+  "target": "beta_mean",
+  "feature_kind": "time_only",
+  "feature_csv": "outputs\\features\\original_time_features.csv",
+  "n_rows_after_alignment": 95,
+  "n_features": 4,
+  "pca_components": 0,
+  "n_predicted": 75,
+  "r2": 0.5759842264883543,
+  "pearson_r": 0.7729359804581655,
+  "pearson_p": 4.5033705796258515e-16,
+  "spearman_rho": 0.7211664295874821,
+  "spearman_p": 2.9389523506173506e-13
+}

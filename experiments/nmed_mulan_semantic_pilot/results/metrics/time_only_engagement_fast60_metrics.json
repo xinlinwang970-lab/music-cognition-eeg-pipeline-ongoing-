@@ -1,0 +1,14 @@
+{
+  "target": "engagement_fast60",
+  "feature_kind": "time_only",
+  "feature_csv": "outputs\\features\\original_time_features.csv",
+  "n_rows_after_alignment": 84,
+  "n_features": 4,
+  "pca_components": 0,
+  "n_predicted": 70,
+  "r2": -7.330079814854358,
+  "pearson_r": -0.005332693415487696,
+  "pearson_p": 0.9650530979148175,
+  "spearman_rho": -0.014854343452016446,
+  "spearman_p": 0.9028599743391422
+}

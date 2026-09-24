@@ -1,0 +1,21 @@
+project_name: nmed_mulan_semantic_pilot
+condition: original
+window_seconds: 5.0
+stimulus_duration_seconds: 475.0
+fast_timescale_seconds: 60.0
+
+inputs:
+  nmed_window_csv: data/external/nmed_window_level_data.csv
+  original_audio: data/stimuli/nmed_e_original.wav
+
+outputs:
+  target_timeseries_csv: outputs/tables/nmed_original_group_timeseries.csv
+  time_features_csv: outputs/features/original_time_features.csv
+  acoustic_features_csv: outputs/features/original_acoustic_features.csv
+  muq_mulan_embeddings_csv: outputs/features/original_muq_mulan_embeddings.csv
+
+modeling:
+  semantic_model: OpenMuQ/MuQ-MuLan-large
+  semantic_sample_rate_hz: 24000
+  default_pca_components: 8
+  ridge_alphas: [0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0]

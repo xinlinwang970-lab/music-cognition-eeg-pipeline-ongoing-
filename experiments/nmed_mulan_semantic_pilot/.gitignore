@@ -1,0 +1,28 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+pytest-cache-files-*/
+
+# Do not commit copyrighted or restricted stimulus audio.
+data/stimuli/*
+!data/stimuli/README.md
+*.wav
+*.mp3
+*.flac
+*.aiff
+*.aif
+*.m4a
+
+# Regenerated outputs.
+outputs/features/*
+outputs/tables/*
+outputs/figures/*
+!outputs/features/.gitkeep
+!outputs/tables/.gitkeep
+!outputs/figures/.gitkeep
+
+# Model caches should stay outside the project.
+models/
+checkpoints/
+vendor/

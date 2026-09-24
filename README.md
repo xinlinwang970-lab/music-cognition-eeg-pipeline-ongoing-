@@ -41,6 +41,8 @@ In DS002721, the same transported frontal beta feature does not show a stable po
 ├── results/
 │   ├── figures/
 │   └── summary/
+├── experiments/
+│   └── nmed_mulan_semantic_pilot/
 ├── scripts/
 │   └── analysis/
 ├── tests/
@@ -52,6 +54,8 @@ In DS002721, the same transported frontal beta feature does not show a stable po
 Raw EEG data are intentionally not part of the public repository. See [docs/DATASETS.md](docs/DATASETS.md) and [data/README.md](data/README.md).
 
 Two legacy helper scripts, `toy1_1_nmede_diagnostics.py` and `toy2_nmede_pilot.py`, are retained because the NMED-E V1/V1.1 scripts currently import shared helper functions from them. They are not presented as separate claims.
+
+The `experiments/nmed_mulan_semantic_pilot/` directory contains an exploratory original-only extension that compares time-only, acoustic, and MuQ-MuLan feature models on NMED-E original-condition dynamics. It is included as a methodological extension and negative-control result, not as a claim that MuQ-MuLan currently explains EEG beyond the stimulus timeline.
 
 ## Main Analyses
 

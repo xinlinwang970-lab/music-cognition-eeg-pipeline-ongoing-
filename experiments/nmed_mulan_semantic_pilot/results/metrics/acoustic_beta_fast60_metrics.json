@@ -1,0 +1,14 @@
+{
+  "target": "beta_fast60",
+  "feature_kind": "acoustic",
+  "feature_csv": "outputs\\features\\original_acoustic_features.csv",
+  "n_rows_after_alignment": 84,
+  "n_features": 30,
+  "pca_components": 0,
+  "n_predicted": 70,
+  "r2": -0.0001691063888236144,
+  "pearson_r": 0.09107807875560375,
+  "pearson_p": 0.45334276868173196,
+  "spearman_rho": -0.03364535036304785,
+  "spearman_p": 0.7821587406256645
+}

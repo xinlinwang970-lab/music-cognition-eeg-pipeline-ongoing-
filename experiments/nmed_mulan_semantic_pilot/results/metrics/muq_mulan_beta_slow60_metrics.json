@@ -1,0 +1,14 @@
+{
+  "target": "beta_slow60",
+  "feature_kind": "muq_mulan",
+  "feature_csv": "outputs\\features\\original_muq_mulan_embeddings.csv",
+  "n_rows_after_alignment": 84,
+  "n_features": 513,
+  "pca_components": 8,
+  "n_predicted": 70,
+  "r2": -2.279115894412021,
+  "pearson_r": 0.8396475726726114,
+  "pearson_p": 1.0739356381963686e-19,
+  "spearman_rho": 0.8601347213717084,
+  "spearman_p": 1.4655928013133525e-21
+}

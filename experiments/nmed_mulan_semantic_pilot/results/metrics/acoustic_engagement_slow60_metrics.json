@@ -1,0 +1,14 @@
+{
+  "target": "engagement_slow60",
+  "feature_kind": "acoustic",
+  "feature_csv": "outputs\\features\\original_acoustic_features.csv",
+  "n_rows_after_alignment": 84,
+  "n_features": 30,
+  "pca_components": 0,
+  "n_predicted": 70,
+  "r2": -4.945554712894212,
+  "pearson_r": -0.53574122218735,
+  "pearson_p": 1.7600433835404424e-06,
+  "spearman_rho": -0.31015659172425863,
+  "spearman_p": 0.008974811283009467
+}

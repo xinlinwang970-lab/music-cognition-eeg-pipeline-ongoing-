@@ -1,0 +1,3 @@
+torch
+muq
+transformers<5

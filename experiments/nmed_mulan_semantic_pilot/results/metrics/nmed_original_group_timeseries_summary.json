@@ -1,0 +1,9 @@
+{
+  "condition": "original",
+  "n_windows": 95,
+  "n_valid_fast60_windows": 84,
+  "n_subjects_min": 22,
+  "n_subjects_max": 22,
+  "window_seconds": 5.0,
+  "fast_timescale_seconds": 60.0
+}

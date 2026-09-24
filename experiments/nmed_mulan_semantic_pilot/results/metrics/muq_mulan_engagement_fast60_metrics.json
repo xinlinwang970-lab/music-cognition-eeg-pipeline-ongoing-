@@ -1,0 +1,14 @@
+{
+  "target": "engagement_fast60",
+  "feature_kind": "muq_mulan",
+  "feature_csv": "outputs\\features\\original_muq_mulan_embeddings.csv",
+  "n_rows_after_alignment": 84,
+  "n_features": 513,
+  "pca_components": 8,
+  "n_predicted": 70,
+  "r2": -0.08942023211890304,
+  "pearson_r": 0.07803609663319959,
+  "pearson_p": 0.5207944457644341,
+  "spearman_rho": 0.11958708774385443,
+  "spearman_p": 0.32410058120246765
+}
